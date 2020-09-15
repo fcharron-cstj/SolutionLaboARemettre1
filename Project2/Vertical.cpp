@@ -1,24 +1,26 @@
-//But : …crire un programme qui vÈrifie que le nombre entrÈ est de 5 chiffre et qui va les placer sur 5 lignes verticalement
-//Auteur : FrÈdÈric Charron
+//FR : But : √âcrire un programme qui v√©rifie que le nombre entr√© est de 5 chiffre et qui va les placer sur 5 lignes verticalement
+//Auteur : Fr√©d√©ric Charron
 //Date : 08/09/2020
 
 #include <iostream>
 int main()
 {
-	setlocale(LC_ALL, "");		//CaractËres accentuÈs
+	setlocale(LC_ALL, "");		//Caract√®res accentu√©s
 
 	int nombre;				
 
 	std::cout << " Veuillez entrer un nombre entier de 5 chiffres : ";			//Le programme demande le nombre
 
-	std::cin >> nombre;			//Le programme reÁoit le nombre entrÈ par l'utilisateur
+	std::cin >> nombre;			//Le programme re√ßoit le nombre entr√© par l'utilisateur
 
-	if (nombre >= 10000)		//Si le nombre est Ègal ou au dessus de 10 000, (5chiffres), alors il va ÈxÈcuter la commande qui met le nombre sur une ligne verticale.
+	if (nombre >= 10000)		//Si le nombre est √©gal ou au dessus de 10 000, (5chiffres), alors il va √©x√©cuter la commande qui met le nombre sur une ligne verticale.
 
 	{
-
+		// KM : La validation du nombre n'est pas compl√®te, il peut avoir 6 chiffres ou plus
+		
+		// KM : C'est parfait ici, tu as montr√© que tu sais pr√©senter l'information, il te manque juste l'id√©e du calcul
 		std::cout << nombre;			
-		std::cout << "\n";				//	"\n"; va descendre ‡ la prochaine ligne.
+		std::cout << "\n";				//	"\n"; va descendre √† la prochaine ligne.
 		std::cout << nombre;
 		std::cout << "\n";
 		std::cout << nombre;
@@ -27,15 +29,15 @@ int main()
 		std::cout << "\n";
 		std::cout << nombre;
 	}
-	else												//Si le chiffre est en dessous de 10 000, alors il va ÈxÈcuter cette ligne de code et envoyer un message disant que le nombre n'est pas de 5 chiffres
+	else												//Si le chiffre est en dessous de 10 000, alors il va √©x√©cuter cette ligne de code et envoyer un message disant que le nombre n'est pas de 5 chiffres
 	{
-		std::cout << " Le nombre n'est pas composÈ de 5 chiffres";
+		std::cout << " Le nombre n'est pas compos√© de 5 chiffres";
 
 
 	}
 }
 
-
-/* Je n'ai pas compris comment mettre chaque chiffre sur une ligne diffÈrente, j'aurais probablement pu le faire mais je ne voulais pas prendre trop de temps l‡-dessus.
+// KM : C'est parfait comme explication, je vois que tu as fourni l'effort que je demandais.
+/* Je n'ai pas compris comment mettre chaque chiffre sur une ligne diff√©rente, j'aurais probablement pu le faire mais je ne voulais pas prendre trop de temps l√†-dessus.
 
 */
